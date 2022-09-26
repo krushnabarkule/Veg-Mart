@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    {{>links}}
+
+    <title>विठ्ठला</title>
+</head>
+
+<body>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            {{>navbar}}
+        </div>
+
+        <div class="row signup p-4 my-5">
+            <div class="col-md-12 mx-auto register">
+                <div>
+                    <h1 class="signup-heading"> Login Form </h1>
+                    <form action="/login" method="POST">
+                        <div class="row">
+                            <div class="col-md-6 mx-auto input-field">
+                                <div class="input-group mb-4">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" class="form-control" placeholder=" Enter Email *" name="email"
+                                        required>
+                                </div>
+                                <div class="input-group mb-4">
+                                    <i class="fas fa-key"></i>
+                                    <input type="password" class="form-control" placeholder=" Enter Password *"
+                                        name="password" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-md-75"> Login </button>
+                                <a href="/signup" class="text-center mt-5 mb-3 display-6"> Create An Acoount </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {{>footer}}
+
+
+</body>
+
+</html>

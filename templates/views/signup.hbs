@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    {{>links}}
+
+    <title>विठ्ठला</title>
+</head>
+
+<body>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            {{>navbar}}
+        </div>
+
+        <div class="row signup p-4 my-5">
+            <div class="col-md-12 mx-auto register">
+                <div>
+                    <h1 class="signup-heading"> Sign-up Form </h1>
+                    <form action="/signup" method="POST">
+                        <div class="row">
+                            <div class="col-md-6 mx-auto input-field">
+                                <div class="input-group mb-4">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" class="form-control" placeholder=" Enter Name *" name="name"
+                                        required>
+                                </div>
+                                <div class="input-group mb-4">
+                                    <i class="fas fa-mobile"></i>
+                                    <input type="text" class="form-control" placeholder=" Enter Phone no. *"
+                                        name="phone" required>
+                                </div>
+                                <div class="input-group mb-4">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" class="form-control" placeholder=" Enter Email " name="email">
+                                </div>
+                                <div class="input-group mb-4">
+                                    <i class="fas fa-street-view"></i>
+                                    <input type="text" class="form-control" placeholder=" Enter Address *"
+                                        name="address" required>
+                                </div>
+                                <div class="input-group mb-4">
+                                    <i class="fas fa-key"></i>
+                                    <input type="password" class="form-control" placeholder=" Password *"
+                                        name="password" required>
+                                </div>
+                                <div class="input-group mb-4">
+                                    <i class="fas fa-key"></i>
+                                    <input type="password" class="form-control" placeholder="Confirm Password "
+                                        name="confirmpassword">
+                                </div>
+                                <button type="submit" class="btn btn-primary w-md-75">Sign Up</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+
+
+</body>
+
+</html>
